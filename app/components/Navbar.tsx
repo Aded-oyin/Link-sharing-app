@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import Logo from '../../../public/logo.png';
-import Vector from '../../../public/Vector.png'
-import Profile from '../../../public/profile.png'
-import Eye from '../../../public/eye.png'
+import Logo from '../../public/logo.png';
+import Vector from '../../public/Vector.png'
+import Profile from '../../public/profile.png'
+import Eye from '../../public/eye.png'
 
 const Navbar = () => {
   return (

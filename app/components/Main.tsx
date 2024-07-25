@@ -1,5 +1,5 @@
 import Image from "next/image"
-import Phones from '../../../public/Phones.svg'
+import Phones from '../../public/Phones.svg'
 
 const Main = () => {
   return (
