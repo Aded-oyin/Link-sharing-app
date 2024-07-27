@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
-import { auth } from "../../firebase"; // Ensure the path is correct
+import { auth } from "../firebase"; // Ensure the path is correct
 import { 
     createUserWithEmailAndPassword, 
     signInWithEmailAndPassword, 

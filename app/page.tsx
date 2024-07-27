@@ -2,7 +2,7 @@
 "use client"; // This directive is needed for Next.js 13 and beyond to enable client-side rendering.
 
 import { useEffect } from 'react';
-import { useAuth } from './context/AuthContext'; // Ensure the path is correct (adjust if necessary)
+import { useAuth } from '@/context/AuthContext'; // Ensure the path is correct (adjust if necessary)
 import { useRouter } from 'next/navigation';
 
 const Home = () => {

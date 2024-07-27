@@ -3,8 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
-import Logo from '../../../public/logo.png';
+import { useRouter } from 'next/navigation';
+import Logo from '../../public/logo.png';
 import { useAuth } from '@/context/AuthContext';
 
 
@@ -40,12 +40,12 @@ const Login = () => {
                 </h1>
                 <div className='w-[476px] h-[530px] mt-7 pb-[30px] bg-white'>
                     <div className='max-w-[400px] mx-auto py-16'>
-                        <h1 className='text-4xl font-bold'>Login</h1>
+                        <h1 className='text-3xl font-bold'>Login</h1>
                         <p className="text-[#737373] py-4">Add your details below to get back into the app</p>
                         <form className='w-full flex flex-col pt-7' onSubmit={handleSubmit}>
                             <p>Email address</p>
                             <input
-                                className='my-2 border rounded-md w-[396px] h-[48px]'
+                                className='my-2 border rounded-md w-[396px] h-[48px] hover:border-[#633CFF]'
                                 type='email'
                                 placeholder='e.g. alex@email.com'
                                 value={email}
@@ -54,7 +54,7 @@ const Login = () => {
                             />
                             <p className="mt-5">Password</p>
                             <input
-                                className='my-2 border rounded-md w-[396px] h-[48px]'
+                                className='my-2 border rounded-md w-[396px] h-[48px] hover:border-[#633CFF]'
                                 type='password'
                                 placeholder='Enter your password'
                                 value={password}

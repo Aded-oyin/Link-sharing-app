@@ -4,7 +4,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import Logo from '../../public/logo.png';
 import { useAuth } from '@/context/AuthContext';
 
@@ -30,7 +30,7 @@ const Signup = () => {
 
         try {
             await signUp(email, password);
-            router.push('/center'); // Redirect to Center page after successful signup
+            router.push('/center'); 
         } catch (err) {
             setError('Failed to create an account. Please try again.');
         } finally {
@@ -47,30 +47,30 @@ const Signup = () => {
                 </h1>
                 <div className='w-[476px] h-[618px] mt-7 pb-[30px] bg-white'>
                     <div className='max-w-[400px] mx-auto py-16'>
-                        <h1 className='text-4xl font-bold'>Create account</h1>
+                        <h1 className='text-3xl font-bold text-[#333333] font-sans'>Create account</h1>
                         <p className="text-[#737373] py-4">{"Let's"} get you started sharing your links!</p>
                         <form className='w-full flex flex-col pt-7' onSubmit={handleSubmit}>
-                            <p>Email address</p>
+                            <p className='text-[12px]'>Email address</p>
                             <input
-                                className='my-2 border rounded-md w-[396px] h-[48px]'
+                                className='my-2 border rounded-md w-[396px] h-[48px] hover:border-[#633CFF] duration-200 '
                                 type='email'
                                 placeholder='e.g. alex@email.com'
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
                             />
-                            <p className="mt-5">Create password</p>
+                            <p className="mt-5 text-[12px]">Create password</p>
                             <input
-                                className='my-2 border rounded-md w-[396px] h-[48px]'
+                                className='my-2 border rounded-md w-[396px] h-[48px] hover:border-[#633CFF]'
                                 type='password'
                                 placeholder='At least 8 characters'
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
                             />
-                            <p className="mt-5">Confirm password</p>
+                            <p className="mt-5 text-[12px]">Confirm password</p>
                             <input
-                                className='my-2 border rounded-md w-[396px] h-[48px]'
+                                className='my-2 border rounded-md w-[396px] h-[48px] hover:border-[#633CFF]'
                                 type='password'
                                 placeholder='At least 8 characters'
                                 value={confirmPassword}
