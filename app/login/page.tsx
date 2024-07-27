@@ -43,7 +43,7 @@ const Login = () => {
                         <h1 className='text-3xl font-bold'>Login</h1>
                         <p className="text-[#737373] py-4">Add your details below to get back into the app</p>
                         <form className='w-full flex flex-col pt-7' onSubmit={handleSubmit}>
-                            <p>Email address</p>
+                            <p className='text-[14px]'>Email address</p>
                             <input
                                 className='my-2 border rounded-md w-[396px] h-[48px] hover:border-[#633CFF]'
                                 type='email'
@@ -52,7 +52,7 @@ const Login = () => {
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
                             />
-                            <p className="mt-5">Password</p>
+                            <p className="mt-5 text-[14px]">Password</p>
                             <input
                                 className='my-2 border rounded-md w-[396px] h-[48px] hover:border-[#633CFF]'
                                 type='password'

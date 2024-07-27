@@ -50,7 +50,7 @@ const Signup = () => {
                         <h1 className='text-3xl font-bold text-[#333333] font-sans'>Create account</h1>
                         <p className="text-[#737373] py-4">{"Let's"} get you started sharing your links!</p>
                         <form className='w-full flex flex-col pt-7' onSubmit={handleSubmit}>
-                            <p className='text-[12px]'>Email address</p>
+                            <p className='text-[14px]'>Email address</p>
                             <input
                                 className='my-2 border rounded-md w-[396px] h-[48px] hover:border-[#633CFF] duration-200 '
                                 type='email'
@@ -59,7 +59,7 @@ const Signup = () => {
                                 onChange={(e) => setEmail(e.target.value)}
                                 required
                             />
-                            <p className="mt-5 text-[12px]">Create password</p>
+                            <p className="mt-5 text-[14px]">Create password</p>
                             <input
                                 className='my-2 border rounded-md w-[396px] h-[48px] hover:border-[#633CFF]'
                                 type='password'
@@ -68,7 +68,7 @@ const Signup = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                                 required
                             />
-                            <p className="mt-5 text-[12px]">Confirm password</p>
+                            <p className="mt-5 text-[14px]">Confirm password</p>
                             <input
                                 className='my-2 border rounded-md w-[396px] h-[48px] hover:border-[#633CFF]'
                                 type='password'
